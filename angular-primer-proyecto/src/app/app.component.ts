@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Persona } from './lista.component';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
+  @Input() per:Persona;
   title = 'Hello World!';
 }

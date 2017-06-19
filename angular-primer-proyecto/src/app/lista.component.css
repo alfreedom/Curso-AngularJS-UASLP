@@ -4,3 +4,7 @@ ul li {
     width: 80px;
     text-align: center;
 }
+
+input {
+    margin-left: 50px;
+}

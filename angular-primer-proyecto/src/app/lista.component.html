@@ -1,9 +1,21 @@
 
 <div>
     <ul>
-        <li>{{nombres[0]}}</li>
-        <li>{{nombres[1]}}</li>
-        <li>{{nombres[2]}}</li>
-        <li>{{nombres[3]}}</li>
+        <li [style.color] ='colors[0]' (click)='colors[0]="red";'> {{nombres[0]}} </li>
+        <li [style.color] ='colors[1]' (click)='colors[1]="red";'> {{nombres[1]}} </li>
+        <li [style.color] ='colors[2]' (click)='colors[2]="red";'> {{nombres[2]}} </li>
+        <li [style.color] ='colors[3]' (click)='colors[3]="red";'> {{nombres[3]}} </li>
     </ul>
 </div>
+
+<div>
+    <ul>
+        <li *ngFor = "let n of nombres">
+            {{n}}
+        </li>
+    </ul>
+</div>
+
+<input type="button" value="Alerta" (click)=alerta()>
+
+<app-root [id] = "id" [per] = "persona" >Cargando </app-root>
