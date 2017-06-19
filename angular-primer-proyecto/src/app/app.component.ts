@@ -10,5 +10,6 @@ import { Persona } from './lista.component';
 
 export class AppComponent {
   @Input() per:Persona;
+  @Input() id:Number;
   title = 'Hello World!';
 }
