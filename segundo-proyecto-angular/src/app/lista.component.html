@@ -1,0 +1,15 @@
+
+<app-root>Loading...</app-root>
+
+<ul>
+  <li *ngFor="let persona of personas" >
+    {{persona.nombre}} - {{persona.apellido}} - {{persona.edad}}
+  </li>
+</ul>
+
+<ul>
+    <li *ngFor="let user of users" >
+        <img src={{user.imagenUrl}} alt="" height="50px" width="50px">
+        {{user.nombre}} - {{user.tipo}}
+    </li>
+</ul>
