@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ListaComponent } from './lista.component';
+import { DetalleComponent } from './detalle.persona.component';
+
 import { PersonaService } from './persona.service';
+import { UsuarioService } from './usuario.service';
 
 @NgModule({
   declarations: [
     ListaComponent,
+    DetalleComponent,
     AppComponent
   ],
   imports: [
@@ -17,7 +21,7 @@ import { PersonaService } from './persona.service';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [PersonaService, UsuarioService],
   bootstrap: [ListaComponent]
 })
 

@@ -7,5 +7,5 @@ export const Personas: Persona[] = [
     { id:4, nombre:"Rodolfo", apellido:"Anguiano",  edad:32 },
     { id:5, nombre:"Tomás",   apellido:"Alfaro",    edad:29 },
     { id:6, nombre:"Omar",    apellido:"Rodriguez", edad:25 },
-    { id:6, nombre:"Manuel",  apellido:"Nava",      edad:25 }
+    { id:7, nombre:"Manuel",  apellido:"Nava",      edad:25 }
 ];

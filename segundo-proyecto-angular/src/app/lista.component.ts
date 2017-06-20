@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+
 import { Persona } from './persona';
 import { PersonaService } from './persona.service';
 
@@ -9,21 +10,23 @@ import { UsuarioService } from "./usuario.service";
   selector: 'lista-component',
   templateUrl: './lista.component.html',
   styleUrls:  ['./lista.component.css'],
-  providers: [PersonaService, UsuarioService]
 })
 
 export class ListaComponent {
+  @Output() per:Persona;
   personas:Persona[];
   users:Usuario[];
+  persona:Persona;
 
   constructor(private personaServicio:PersonaService,
-              private usuarioServicio:UsuarioService)
-  {
+              private usuarioServicio:UsuarioService){
   }
 
+  onSelectPersona(per:Persona):void{
+    this.per = per;
+  }
   
   getPersonas():void {
-
      this.personaServicio.getPersonas().then((personas)=>{
         this.personas=personas;
      });

@@ -1,15 +1,12 @@
-
 <app-root>Loading...</app-root>
+
+
+<div>Personas</div>
 
 <ul>
   <li *ngFor="let persona of personas" >
-    {{persona.nombre}} - {{persona.apellido}} - {{persona.edad}}
+    <span  (click)="onSelectPersona(persona)"> <a href="#" class=""> {{persona.nombre}}</a></span>
   </li>
 </ul>
 
-<ul>
-    <li *ngFor="let user of users" >
-        <img src={{user.imagenUrl}} alt="" height="50px" width="50px">
-        {{user.nombre}} - {{user.tipo}}
-    </li>
-</ul>
+<detalle-component [persona] = 'per' ></detalle-component>
