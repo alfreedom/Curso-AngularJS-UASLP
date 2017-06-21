@@ -9,7 +9,7 @@ import { UsuarioService } from "./usuario.service";
 @Component({
   selector: 'lista-component',
   templateUrl: './lista.component.html',
-  styleUrls:  ['./lista.component.css'],
+  styleUrls:  ['./estilos.css'],
 })
 
 export class ListaComponent {

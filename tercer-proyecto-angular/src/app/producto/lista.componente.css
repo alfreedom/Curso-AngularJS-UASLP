@@ -1,0 +1,46 @@
+
+.productContainer {
+  margin: 0;
+  border: 1px solid red;
+  float: left;
+  background-color: black;
+  width: 100%;
+}
+
+.productItem{
+  border: 1px solid #cacaca;
+  width: 400px;
+  margin: 10px;
+  float: left;
+}
+
+.productImg {
+  width: 105px;
+  height: 105px;
+  float: left;
+  margin-right: 5px;
+}
+
+.productTitle{
+  background-color: #581845;
+  color: #ffc300;
+  font-size: 2em;
+}
+
+.productPrice {
+  background-color: #ff5733;
+  color: #000;
+  font-size: 1.5em;
+}
+
+.productDescription {
+  background-color: #c70039;
+  color: #fff;
+  font-size: 1em;
+}
+
+.productStock {
+  background-color: #900c3f;
+  color: #fff;
+  font-size: 1em;
+}

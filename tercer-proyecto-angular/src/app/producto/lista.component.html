@@ -1,0 +1,23 @@
+
+<h1 style="margin-top: 10px; background-color: #cacaca">Lista de Productos</h1>
+
+<div *ngIf="productos">
+
+	<div class="productContainer">
+
+		<div *ngFor="let p of productos" >
+				<div (click)="onSelectProducto(p)" class="productItem">
+					<img src={{p.imgUrl}} alt="" class="productImg">
+					<div class="productTitle"> {{p.nombre}}  </div>
+					<div class="productPrice">Precio: ${{p.precio}} MXN</div>
+					<div class="productDescription"> {{p.descripcion}} </div>
+					<div class="productStock">Disponibles: {{p.stock}} </div>
+				</div>
+		</div>
+	</div>
+
+</div>
+<br>
+<div style="margin-top: 10px; background-color: #cacaca">
+	<carrito-component [prodIn]="prodSel">Cargando </carrito-component>
+</div>

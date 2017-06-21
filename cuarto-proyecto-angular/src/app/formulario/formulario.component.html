@@ -1,0 +1,16 @@
+
+<div class="panel-default">
+  <div class="panel-heading">Formulario</div>
+  <label>Escribe tu correo</label>
+  <input type="text" [(ngModel)]="correo" >
+  <button (click)="enviar()" class="button"> <span>Enviar</span> </button>
+
+  <ul>
+    <li (click)="select()" [ngStyle]="getStyle()" [ngClass]="getClass()" *ngFor="let correo of correos" >
+      {{correo}}
+    </li>
+  </ul>
+  
+</div>
+
+<p [remarca]="color" > Soy un párrafo</p>
