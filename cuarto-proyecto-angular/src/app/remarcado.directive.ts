@@ -9,24 +9,25 @@ import { ElementRef } from "@angular/core";
 
 export class RemarcaDirective{
   // @Input NOMBRE = selector    ALIAS: TIPO
-  @Input('remarca') param:string;
-  @Input() color:string;
-
+  @Input('remarca') color:string;
+  is_selected:boolean = false;
   constructor(private er: ElementRef){}
 
   @HostListener('mouseenter') onmouseenter(){
-    
-    this.remarcar(this.param || "red");
- 
+    this.er.nativeElement.style.backgroundColor = this.color;
   }
 
   @HostListener('mouseleave') onmouseleave() {
-    this.remarcar(null);
+    if(!this.is_selected)
+      this.er.nativeElement.style.backgroundColor = null;
     
   }
 
+  @HostListener('click') onclick(){
+    this.is_selected = !this.is_selected;
+  }
+
   private remarcar(color:string) {
-    this.er.nativeElement.style.backgroundColor = color;
   }
 
 }

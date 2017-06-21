@@ -47,6 +47,7 @@ export class FormComponent {
 
     return clases;
   }
+  
 
 }
 

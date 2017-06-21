@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { FormComponent } from "./formulario/formulario.component";
 
 import { RemarcaDirective } from "./remarcado.directive";
+import { ColoreaDirective } from "./colorea.directive";
 
 @NgModule({
   declarations: [
     FormComponent,
     AppComponent,
-    RemarcaDirective
+    RemarcaDirective,
+    ColoreaDirective
   ],
   imports: [
     BrowserModule,
