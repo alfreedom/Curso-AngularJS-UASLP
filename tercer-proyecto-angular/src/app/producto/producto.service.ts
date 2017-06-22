@@ -5,7 +5,8 @@ import { Productos } from "./productosDB";
 @Injectable()
 export class ProductoService {
 
-    getProductos(): Promise<Producto[]> {
-			return Promise.resolve(Productos);
-    }
+	getProductos(): Promise<Producto[]> {
+		return Promise.resolve(Productos);
+  }
+	
 }

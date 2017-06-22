@@ -18,9 +18,9 @@ export class RemarcaDirective{
   }
 
   @HostListener('mouseleave') onmouseleave() {
+    
     if(!this.is_selected)
       this.er.nativeElement.style.backgroundColor = null;
-    
   }
 
   @HostListener('click') onclick(){
