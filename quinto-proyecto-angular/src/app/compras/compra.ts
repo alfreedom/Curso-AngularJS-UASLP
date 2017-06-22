@@ -1,5 +1,5 @@
 
-export class Compra{
+export class Compra {
   id:number;
   id_usuario: number;
 }

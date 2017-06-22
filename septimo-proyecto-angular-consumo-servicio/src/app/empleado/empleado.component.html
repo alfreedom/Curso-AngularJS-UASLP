@@ -1,0 +1,12 @@
+<p>
+  empleado works!
+</p>
+
+<div *ngFor = "let emp of empleados" >
+  <div>
+    {{emp.id}} - {{emp.name}} - {{emp.username}}
+  </div>
+  <div> {{emp.email}} - {{emp.address.street}} - {{emp.address.suite}} </div>
+  <div> {{emp.address.city}} - {{emp.address.geo.lat}} - {{emp.address.geo.lng}} </div>
+  <div> {{emp.phone}} - {{emp.website}}</div>
+</div>

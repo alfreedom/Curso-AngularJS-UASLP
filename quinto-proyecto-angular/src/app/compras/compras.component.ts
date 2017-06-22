@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Compra } from './compra';
 import { ComprasService } from "./compras.service";
+import { Compra } from "./compra";
 
 @Component({
   selector: 'compras-component',
@@ -9,8 +9,7 @@ import { ComprasService } from "./compras.service";
 })
 
 export class ComprasComponent {
-  compras:Compra[];
-
+  compras: Compra[];
   constructor(private comprasService: ComprasService){
 
   }
