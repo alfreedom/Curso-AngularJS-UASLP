@@ -11,16 +11,21 @@ import { Empleado } from "./empleado";
 export class EmpleadoComponent implements OnInit {
 
   empleados:Empleado[];
-
+  empleadoSel: Empleado;
   constructor(private empleadoService: EmpleadoService) { }
 
   ngOnInit() {
     
-    this.empleadoService.getList().then((respuesta) => {
-
-      console.log("Hola " + respuesta.length);
+    this.empleadoService.getEmpleadoList().then((respuesta) => {
       this.empleados=respuesta;
     });
+  }
+
+  showEmpleado(id:number){
+    this.empleadoService.getEmpleado(id).then( respuesta => {
+      
+      this.empleadoSel = respuesta;
+    })
   }
 
 }
