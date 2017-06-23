@@ -11,13 +11,12 @@ import { Router } from "@angular/router";
 export class ContactoComponent implements OnInit {
 
   formulario:FormGroup;
-
+  text:string;
   constructor(private route:Router) { 
 
     this.formulario =  new FormGroup({
       nombre: new FormControl('', [
-          Validators.required,
-          Validators.pattern('^,{4,}$')
+          Validators.required
       ]),
     
       email: new FormControl('', [
@@ -30,9 +29,10 @@ export class ContactoComponent implements OnInit {
   ngOnInit() {
   }
 
-  enviarForm() {
-    console.log("enviando...");
-    
+  enviarForm(form: FormGroup) {
+    let nombre:string = form.controls['nombre'].value;
+    let email:string = form.controls['email'].value;
+    this.text = nombre + " - " +email;
   }
 
 }

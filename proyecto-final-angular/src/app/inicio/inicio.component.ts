@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
   Message:string = "Inicio Works!"
+  temp:number = 35;
+  
   constructor() { }
 
   ngOnInit() {

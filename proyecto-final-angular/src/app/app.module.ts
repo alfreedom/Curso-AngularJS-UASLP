@@ -13,7 +13,8 @@ import { EmpleadoComponent } from './empleado/empleado.component';
 
 import { EmpleadoService } from "./empleado/empleado.service";
 import { ContactoComponent } from './contacto/contacto.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { GradosPipe } from './grados.pipe'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     ProductosComponent,
     AppComponent,
     EmpleadoComponent,
-    ContactoComponent
+    ContactoComponent,
+    GradosPipe
   ],
   imports: [
     BrowserModule,

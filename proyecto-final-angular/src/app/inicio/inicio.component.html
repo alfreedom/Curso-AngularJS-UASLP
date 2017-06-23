@@ -2,6 +2,12 @@
 <div>
   <h1>Inicio</h1>
 </div>
+
 <div>
   Esta es la página principal
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="temp">
+  {{temp}}°C = {{temp | grados}}°F
 </div>
