@@ -14,7 +14,9 @@ import { EmpleadoComponent } from './empleado/empleado.component';
 import { EmpleadoService } from "./empleado/empleado.service";
 import { ContactoComponent } from './contacto/contacto.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { GradosPipe } from './grados.pipe'
+import { GradosPipe } from './grados.pipe';
+import { OddPipe } from './odd.pipe';
+import { EvenPipe } from './even.pipe'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { GradosPipe } from './grados.pipe'
     AppComponent,
     EmpleadoComponent,
     ContactoComponent,
-    GradosPipe
+    GradosPipe,
+    OddPipe,
+    EvenPipe
   ],
   imports: [
     BrowserModule,

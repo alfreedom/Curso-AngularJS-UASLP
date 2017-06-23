@@ -8,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
   Message:string = "Inicio Works!"
   temp:number = 35;
-  
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  guardaTemp(){
+    localStorage.setItem('temperatura', ""+this.temp);
+  }
+
+  leeTemp(){
+    let temp = localStorage.getItem('temperatura');
+    console.log(temp);
+    
   }
 
 }

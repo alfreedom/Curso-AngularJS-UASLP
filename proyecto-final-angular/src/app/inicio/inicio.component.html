@@ -10,4 +10,7 @@
 <div>
   <input type="text" [(ngModel)]="temp">
   {{temp}}°C = {{temp | grados}}°F
+  <br>
+  <button (click)="guardaTemp()" >Guardar</button>
+  <button (click)="leeTemp()">Leer</button>
 </div>

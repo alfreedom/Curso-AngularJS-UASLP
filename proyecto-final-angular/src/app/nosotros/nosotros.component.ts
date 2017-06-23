@@ -13,6 +13,7 @@ import { EmpleadoService } from "../empleado/empleado.service";
 export class NosotrosComponent implements OnInit {
   Message:string = "Nosotros Works";
   empleados:Empleado[];
+  pipeRes:Empleado;
 
   constructor(private empleadoService: EmpleadoService,
               private route:Router) { }

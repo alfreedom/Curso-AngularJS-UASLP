@@ -1,3 +1,14 @@
 Agregar un componente para mostras una lista de productos
 con servicios, que incluya el detalle de producto.
 
+
+Proyecto final
+
+-Crear una tienda virtual
+-Debe tener al menos 3 componentes
+-debe tener consumo de servicios
+-debe manejar carrito de compra
+
+se deben poder agregar y remover productos al carrito de compras
+
+debe tener aspecto visual atractivo, utilizando algún framework css

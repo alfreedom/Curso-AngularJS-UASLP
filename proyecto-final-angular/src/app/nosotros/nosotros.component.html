@@ -13,3 +13,13 @@
     </div>
   </ul>
 </div>
+
+<div>Nombres con IDs impares</div>
+<div *ngFor = "let p of empleados ">
+  {{p | odd}}
+</div>
+<br>
+<div>Nombres con IDs pares</div>
+<div *ngFor = "let p of empleados">
+  {{p | even}}
+</div>
