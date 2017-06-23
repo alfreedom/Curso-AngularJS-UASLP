@@ -1,0 +1,14 @@
+<h1>
+  {{title}}
+</h1>
+
+<nav>
+  <div> <a [routerLink]="['inicio']" routerLinkActive = "active" >Inicio</a></div>
+  <div> <a [routerLink]="['nosotros']">Nosotros</a></div>
+  <div> <a [routerLink]="['productos']">Productos</a></div>
+  <div> <a [routerLink]="['contacto']">contacto</a></div>
+</nav>
+
+  <router-outlet>
+    
+  </router-outlet>

@@ -1,0 +1,35 @@
+
+<div *ngIf ="!empleadoSel" >
+  <h1> No existe el empleado </h1>  
+</div>
+
+<div *ngIf="empleadoSel"  >
+  <h1>Lista de empleados</h1>
+  <div><h2> Empleado seleccionado</h2></div>
+  <ul>
+    <li>ID: {{empleadoSel.id}} </li>
+    <li>Name: {{empleadoSel.name}} </li>
+    <li>Unsername: {{empleadoSel.username}} </li>
+    <li>Email: {{empleadoSel.email}} </li>
+    <li>->Address:</li>
+    <ul>
+      <li>Street: {{empleadoSel.address.street}} </li>
+      <li>Suite: {{empleadoSel.address.suite}} </li>
+      <li>City: {{empleadoSel.address.city}} </li>
+      <li>Zipcode: {{empleadoSel.address.zipcode}} </li>
+      <li>->Geo:</li>
+      <ul>
+        <li>Latitude: {{empleadoSel.address.geo.lat}} </li>
+        <li>Longitude: {{empleadoSel.address.geo.lng}} </li>
+      </ul>
+    </ul>
+    <li>Phone: {{empleadoSel.phone}} </li>
+    <li>Website: {{empleadoSel.website}} </li>
+    <li>->Company:</li>
+    <ul>  
+      <li>Name: {{empleadoSel.company.name}} </li>
+      <li>Catch Phrase: {{empleadoSel.company.catchPhrase}} </li>
+      <li>BS: {{empleadoSel.company.bs}} </li>
+    </ul>
+  </ul>
+</div>
